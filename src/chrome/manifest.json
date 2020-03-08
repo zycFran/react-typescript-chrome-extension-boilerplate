@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+
+  "name": "Issue-Report",
+  "description": "issue report",
+  "version": "1.0.0",
+
+  "browser_action": {
+    "default_icon": "./assets/icon16.png",
+    "default_popup": "popup.html"
+  },
+
+  "background": {
+    "page": "background.html"
+  },
+
+  "icons": {
+    "16": "./assets/icon16.png",
+    "48": "./assets/icon48.png",
+    "128": "./assets/icon128.png"
+  },
+
+  "permissions": ["activeTab", "notifications", "debugger", "tabCapture", "desktopCapture"],
+
+  "content_security_policy": "default-src 'self'; script-src 'self' 'unsafe-eval'; style-src * 'unsafe-inline' 'self' blob:; img-src 'self' data:;"
+}
